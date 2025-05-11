@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="light-theme.css" />
+  <script src="theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar sticky-navbar">
+    <div class="container">
+      <h1>Movie Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="watchlist.html">Watchlist</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+  <div class="container">
+    <h2>Movie Title</h2>
+
+    <!-- Movie Details Section -->
+    <div class="details-item">
+      <img src="https://via.placeholder.com/600x300" alt="Movie Poster">
+      <div>
+        <h3>Movie Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel urna dolor.</p>
+
+        <!-- Ratings Section -->
+        <div class="ratings">
+          <p><strong>Ratings: </strong>8.5/10</p>
+        </div>
+
+        <!-- Cast Section -->
+        <button class="collapsible">Cast</button>
+        <div class="content">
+          <table class="cast-table">
+            <tr>
+              <th>Actor</th>
+              <th>Role</th>
+            </tr>
+            <tr>
+              <td>Actor 1</td>
+              <td>Main Character</td>
+            </tr>
+            <tr>
+              <td>Actor 2</td>
+              <td>Supporting Role</td>
+            </tr>
+            <!-- More rows as needed -->
+          </table>
+        </div>
+
+        <!-- User Reviews Section -->
+        <button class="collapsible">User Reviews</button>
+        <div class="content">
+          <p><strong>User 1: </strong>Great movie! Highly recommend it.</p>
+          <p><strong>User 2: </strong>It was okay, but not as exciting as I expected.</p>
+          <!-- More reviews as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Movie Portal</p>
+  </footer>
+
+</body>
+
+</html>

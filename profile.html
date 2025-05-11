@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/light-theme.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/theme-toggle.js" defer></script>
+    <script src="js/back-to-top.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1>Movie Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="watchlist.html">Watchlist</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+        </div>
+    </header>
+
+    <!-- Main Profile Content -->
+    <main class="container profile-page">
+        <section class="profile-header">
+            <img src="images/avatar.png" alt="User Avatar" class="profile-avatar" />
+            <div>
+                <h2>Welcome, John Doe</h2>
+                <p>Email: johndoe@example.com</p>
+                <p>Member since: Jan 2024</p>
+            </div>
+        </section>
+
+        <section class="profile-watchlist">
+            <h3>Your Watchlist</h3>
+            <ul>
+                <li>🎬 Interstellar</li>
+                <li>🎬 Stranger Things</li>
+                <li>🎬 Breaking Bad</li>
+            </ul>
+        </section>
+
+        <section class="profile-settings">
+            <h3>Account Settings</h3>
+            <button class="btn-theme-toggle">Change Password</button>
+            <button class="btn-theme-toggle">Logout</button>
+        </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Movie Portal</p>
+    </footer>
+</body>
+
+</html>

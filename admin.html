@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="js/theme-toggle.js" defer></script>
+    <script src="js/back-to-top.js" defer></script>
+    <link id="theme-stylesheet" rel="stylesheet" href="light-theme.css" />
+    <script src="theme-toggle.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Welcome, Admin</h2>
+
+        <section class="admin-overview">
+            <h3>Site Overview</h3>
+            <ul>
+                <li>Total Movies: 120</li>
+                <li>Total Users: 450</li>
+                <li>Pending Reviews: 8</li>
+            </ul>
+        </section>
+
+        <section class="admin-movies">
+            <h3>Manage Movies</h3>
+            <button>Add New Movie</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inception</td>
+                        <td>2010</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Interstellar</td>
+                        <td>2014</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-users">
+            <h3>Manage Users</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td><button>Block</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td><button>Block</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top">&uarr;</button>
+
+    <footer>
+        <p>&copy; 2025 Movie Portal Admin</p>
+    </footer>
+</body>
+
+</html>

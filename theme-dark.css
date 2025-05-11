@@ -1,0 +1,56 @@
+body {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+.navbar a {
+  color: #f4f4f4;
+}
+
+footer {
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+/* Button Styles */
+.btn-theme-toggle {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-theme-toggle:hover {
+  background-color: #f39c12;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #f39c12;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+}

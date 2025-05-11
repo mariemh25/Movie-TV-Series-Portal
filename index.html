@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieFlix - Home</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="theme-dark.css" />
+  <link id="theme-stylesheet" rel="stylesheet" href="theme-light.css" />
+
+  <script src="theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar sticky-navbar">
+    <div class="container">
+      <h1>Movie Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="watchlist.html">Watchlist</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Highlights Section -->
+    <section class="section">
+      <h2>🔥 Top Picks This Week</h2>
+      <div class="movie-grid">
+        <figure class="movie-card">
+          <img src="assets/topgun.jpg" alt="Top Gun" />
+          <figcaption>Top Gun: Maverick</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/strangerthings.jpg" alt="Stranger Things" />
+          <figcaption>Stranger Things</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/batman.jpg" alt="The Batman" />
+          <figcaption>The Batman</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories">
+      <h2>🎬 Browse by Genre</h2>
+      <div class="genre-list">
+        <a href="browse.html?genre=Action">Action</a>
+        <a href="browse.html?genre=Drama">Drama</a>
+        <a href="browse.html?genre=Comedy">Comedy</a>
+        <a href="browse.html?genre=Horror">Horror</a>
+        <a href="browse.html?genre=Sci-Fi">Sci-Fi</a>
+      </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="section">
+      <h2>🆕 New Releases</h2>
+      <div class="movie-grid">
+        <figure class="movie-card">
+          <img src="assets/avatar2.jpg" alt="Avatar 2" />
+          <figcaption>Avatar: The Way of Water</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/dune.jpg" alt="Dune" />
+          <figcaption>Dune: Part Two</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/matrix.jpg" alt="Matrix" />
+          <figcaption>The Matrix Resurrections</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MovieFlix. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

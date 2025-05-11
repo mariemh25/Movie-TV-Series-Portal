@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Movies - MovieFlix</title>
+  <script src="js/theme-toggle.js" defer></script>
+  <link id="theme-stylesheet" rel="stylesheet" href="light-theme.css" />
+  <script src="theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar sticky-navbar">
+    <div class="container">
+      <h1>Movie Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="watchlist.html">Watchlist</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <h2>Browse Movies & Series</h2>
+      <div class="filters">
+        <select id="genre-filter">
+          <option value="">Genre</option>
+          <option value="Action">Action</option>
+          <option value="Drama">Drama</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Horror">Horror</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+
+        <select id="year-filter">
+          <option value="">Year</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+        </select>
+
+        <select id="popularity-filter">
+          <option value="">Popularity</option>
+          <option>Most Watched</option>
+          <option>Top Rated</option>
+          <option>New</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Movie Results -->
+    <section class="section">
+      <div class="movie-grid">
+        <figure class="movie-card">
+          <img src="assets/oppenheimer.jpg" alt="Oppenheimer" />
+          <figcaption>Oppenheimer (2023)</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/barbie.jpg" alt="Barbie" />
+          <figcaption>Barbie (2023)</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/johnwick.jpg" alt="John Wick 4" />
+          <figcaption>John Wick 4 (2023)</figcaption>
+        </figure>
+        <figure class="movie-card">
+          <img src="assets/interstellar.jpg" alt="Interstellar" />
+          <figcaption>Interstellar (2014)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MovieFlix. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JS for future filter logic -->
+  <script>
+    // You can later add JS here to dynamically filter content
+    // For now, it's just a static layout with filter UI
+  </script>
+</body>
+
+</html>

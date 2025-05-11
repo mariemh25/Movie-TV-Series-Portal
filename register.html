@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme-toggle.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar sticky-navbar">
+    <div class="container">
+      <h1>Movie Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="watchlist.html">Watchlist</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="btn-theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h2>Register</h2>
+
+    <form id="register-form" action="profile.html" method="post" onsubmit="return validateRegisterForm()">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error-message" id="password-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span class="error-message" id="confirm-password-error"></span>
+      </div>
+
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Movie Portal</p>
+  </footer>
+
+</body>
+</html>
