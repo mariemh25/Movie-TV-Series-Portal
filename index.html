@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MovieHub Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <script src="theme-toggle.js" defer></script>
+  <script src="back-to-top.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo">MovieHub</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="compare.html">Compare</a>
+    <a href="forum.html">Forum</a>
+    <a href="news.html">News</a>
+    <a href="login.html">login</a>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+</header>
+
+
+  <main class="homepage">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top">⬆ Back to top</button>
+
+    <!-- Section: Top 10 Movies -->
+    <section class="movie-section">
+      <h2>Top MovieHub this week</h2>
+      <div class="movie-grid" id="top10">
+        <!-- Dynamically filled via JS -->
+      </div>
+    </section>
+
+    <!-- Section: Fan Favorites -->
+    <section class="movie-section">
+      <h2>Fan Favorites</h2>
+      <div class="movie-grid" id="fanFavorites">
+        <!-- Dynamically filled via JS -->
+      </div>
+    </section>
+  </main>
+  <button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <script src="theme-toggle.js" defer></script>
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">MovieHub</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+ 
+      <a href="search.html">Search</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="compare.html">Compare</a>
+      <a href="forum.html">Forum</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </header>
+
+  <!-- Main Forum Content -->
+  <main class="container">
+    <h2>Community Discussions</h2>
+
+    <!-- Post 1 -->
+    <div class="post">
+      <h3>Emily: What Do You Think About "Alien"?</h3>
+      <p>"Alien" is a classic sci-fi thriller. How do you rate it compared to modern sci-fi films?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>Michael:</strong>
+          <p>It’s a masterpiece. The tension and atmosphere are unmatched!</p>
+        </div>
+        <div class="reply">
+          <strong>Sophia:</strong>
+          <p>I love the suspense and how it redefined the sci-fi horror genre.</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your thoughts on Alien..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <h3>Alex: Thoughts on "The Last of Us" Adaptation?</h3>
+      <p>How does the series compare to the game? Did it do justice to the original story?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>John:</strong>
+          <p>Absolutely! The casting and story adaptation were perfect.</p>
+        </div>
+        <div class="reply">
+          <strong>Linda:</strong>
+          <p>I loved it! It captured the emotional depth of the game beautifully.</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your opinion on The Last of Us..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <h3>Chris: Who’s Your Favorite Character in "You"?</h3>
+      <p>The psychological depth of "You" is fascinating. Who’s your favorite character and why?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>Emily:</strong>
+          <p>Joe is such a complex character. I can’t help but be intrigued by his mind.</p>
+        </div>
+        <div class="reply">
+          <strong>Daniel:</strong>
+          <p>Love Quinn’s arc was incredible. She brought so much to the story!</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Who’s your favorite character in You?..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="post">
+      <h3>Sarah: The Best "Spider-Man" Movie?</h3>
+      <p>With so many Spider-Man movies out there, which one stands out for you and why?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>James:</strong>
+          <p>Spider-Man: Into the Spider-Verse is a visual masterpiece with a great story.</p>
+        </div>
+        <div class="reply">
+          <strong>Linda:</strong>
+          <p>No Way Home is my favorite. It brought all the Spider-Men together in an epic way!</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your favorite Spider-Man movie..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="post">
+      <h3>Olivia: Let’s Talk "Stranger Things"</h3>
+      <p>What’s your favorite moment from "Stranger Things"? The Upside Down or character dynamics?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>Emily:</strong>
+          <p>Eleven’s arc is phenomenal. The way she grows is inspiring.</p>
+        </div>
+        <div class="reply">
+          <strong>Daniel:</strong>
+          <p>The relationship between Steve and Dustin is pure gold!</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your favorite Stranger Things moment..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="post">
+      <h3>Emma: "Tangled" – A Disney Classic</h3>
+      <p>"Tangled" is one of Disney’s best. What’s your favorite scene or song?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>James:</strong>
+          <p>The lantern scene is breathtaking! The animation is beautiful.</p>
+        </div>
+        <div class="reply">
+          <strong>Sophia:</strong>
+          <p>I love “I See the Light.” It’s such a touching song!</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your favorite Tangled moment..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+
+    <!-- Post 7 -->
+    <div class="post">
+      <h3>David: The Legacy of "The Godfather"</h3>
+      <p>"The Godfather" is a timeless classic. What makes it stand out for you?</p>
+      
+      <div class="reply-section">
+        <h4>Replies</h4>
+        <div class="reply">
+          <strong>Michael:</strong>
+          <p>The dialogue and acting are unmatched. It’s the definition of cinematic excellence.</p>
+        </div>
+        <div class="reply">
+          <strong>Linda:</strong>
+          <p>It’s the way the story portrays family, power, and betrayal that makes it iconic.</p>
+        </div>
+      </div>
+
+      <div class="reply-form">
+        <textarea placeholder="Share your thoughts on The Godfather..." rows="4" required></textarea>
+        <button class="btn-reply" onclick="postReply(this)">Post Reply</button>
+      </div>
+    </div>
+  </main>
+
+ <button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="theme-toggle.js" defer></script>
+  <script src="main.js" defer></script>
+
+  <style>
+    .news-post {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+
+    .news-post img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .news-content {
+      flex: 1;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+.container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(78, 77, 77);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: rgb(92, 88, 88);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: underlineGrow 1s ease;
+}
+
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 80px; }
+}
+.news-content h3 {
+  font-size: 1.8rem;
+  color: #e50914;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.news-content h3:hover {
+  color: #ff3c00;
+  text-shadow: 0 0 8px rgba(255, 60, 0, 0.6);
+  cursor: pointer;
+}
+
+.news-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.news-content p strong::before {
+  content: "📅 ";
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-content a:hover {
+  background-color: #ff3c00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.news-post {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.news-post:nth-child(1) { animation-delay: 0s; }
+.news-post:nth-child(2) { animation-delay: 0.2s; }
+.news-post:nth-child(3) { animation-delay: 0.4s; }
+.news-post:nth-child(4) { animation-delay: 0.6s; }
+
+.news-post img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-content h3 {
+  font-size: 1.8rem;
+  color: #e50914;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.news-content h3:hover {
+  color: #ff3c00;
+  text-shadow: 0 0 8px rgba(255, 60, 0, 0.6);
+  cursor: pointer;
+}
+
+.news-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.news-content p strong::before {
+  content: "📅 ";
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-content a:hover {
+  background-color: #ff3c00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MovieHub</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="compare.html">Compare</a>
+      <a href="forum.html">Forum</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </header>
+  
+  <div class="container">
+    <h2>Upcoming Movie Releases</h2>
+
+    <div class="news-post">
+      <img src="moviepics/matrix.jfif" alt="Matrix 4 Poster">
+      <div class="news-content">
+        <h3>The Matrix 4: Everything You Need to Know</h3>
+        <p><strong>Release Date:</strong> December 2025</p>
+        <p>The fourth installment of The Matrix franchise is on its way. With Keanu Reeves returning as Neo, fans are excited for another mind-bending journey.</p>
+        <a href="https://en.wikipedia.org/wiki/The_Matrix_Resurrections">Read More</a>
+      </div>
+    </div>
+
+    <div class="news-post">
+      <img src="moviepics/avatar.jpg" alt="Avatar 2 Poster">
+      <div class="news-content">
+        <h3>Avatar 2: A New World Awaits</h3>
+        <p><strong>Release Date:</strong> November 2025</p>
+        <p>James Cameron's Avatar sequel promises to take us to new, unexplored worlds of Pandora. Get ready for an unforgettable visual experience.</p>
+        <a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender_season_2">Read More</a>
+      </div>
+    </div>
+
+    <div class="news-post">
+      <img src="moviepics/Dune_(2021_film).jpg" alt="Dune 2 Poster">
+      <div class="news-content">
+        <h3>Dune: Part Two</h3>
+        <p><strong>Release Date:</strong> October 2025</p>
+        <p>Denis Villeneuve continues his epic adaptation of the Dune saga with Part Two, diving deeper into the politics, prophecy, and power struggles of Arrakis.</p>
+        <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)">Read More</a>
+      </div>
+    </div>
+
+    <div class="news-post">
+      <img src="moviepics/fantastic_4.webp" alt="Fantastic Four Poster">
+      <div class="news-content">
+        <h3>Fantastic Four (MCU Reboot)</h3>
+        <p><strong>Release Date:</strong> July 2025</p>
+        <p>Marvel Studios introduces the Fantastic Four into the MCU with a fresh origin story and connections to the larger Marvel universe fans love.</p>
+        <a href="https://en.wikipedia.org/wiki/Fantastic_Four">Read More</a>
+      </div>
+    </div>
+
+  </div>
+  <button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+</html>

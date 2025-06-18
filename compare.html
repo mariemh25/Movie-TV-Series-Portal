@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Movies</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="theme-toggle.js" defer></script>
+  <script src="compare.js" defer></script>
+  <script src="main.js" defer></script>
+  <style>
+    .container {
+      padding: 20px;
+    }
+
+    .compare-form {
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 8px 12px;
+      margin: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+#comparison-table {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #222;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+#comparison-table p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#comparison-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-size: 1rem;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+#comparison-table th,
+#comparison-table td {
+  background-color: #fafafa;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+#comparison-table th {
+  background-color: #ffd700;
+  color: #222;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+#comparison-table tbody tr:hover td {
+  background-color: #fff3b0;
+  color: #222;
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+
+#comparison-table td {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+
+@media (max-width: 768px) {
+  #comparison-table {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  #comparison-table th,
+  #comparison-table td {
+    padding: 12px 15px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">MovieHub</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="compare.html">Compare</a>
+      <a href="forum.html">Forum</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </header>
+
+  <div class="container">
+    <h2>Compare Movies</h2>
+
+    <div class="compare-form">
+      <select id="selectMovie1">
+        <option value="">-- Select Movie 1 --</option>
+      </select>
+
+      <select id="selectMovie2">
+        <option value="">-- Select Movie 2 --</option>
+      </select>
+
+      <button onclick="compareSelectedMovies()">Compare</button>
+    </div>
+
+    <div id="comparison-table"></div>
+  </div>
+  <button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+</html>

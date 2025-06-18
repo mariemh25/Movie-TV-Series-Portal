@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme-toggle.js" defer></script>
+    <script src="back-to-top.js" defer></script>
+    <script src="admin-actions.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+     <header class="navbar">
+    <div class="logo">MovieHub</div>
+    <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="compare.html">Compare</a>
+    <a href="forum.html">Forum</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()"> 🌙Toggle Theme</button>
+</header>
+
+
+    <main class="container">
+        <h2>Welcome, Admin</h2>
+        <section class="admin-movies">
+            <h3>Manage Movies</h3>
+            <button id="add-movie-btn">Add New Movie</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inception</td>
+                        <td>2010</td>
+                        <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interstellar</td>
+                        <td>2014</td>
+                        <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+
+            </table>
+        </section>
+
+        <section class="admin-users">
+            <h3>Manage Users</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mareim helmy</td>
+                        <td>mariemh636@gmail.com</td>
+                        <td>
+                        <button class="block-btn">Block</button>
+                        <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>marise joesph</td>
+                        <td>marise@gmail.com</td>
+                        <td>
+                        <button class="block-btn">Block</button>
+                        <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+
+            </table>
+        </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top">&uarr;</button>
+
+</body>
+
+</html>

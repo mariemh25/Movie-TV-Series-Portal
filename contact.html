@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="theme-toggle.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="navbar">
+  <div class="logo">MovieHub</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="compare.html">Compare</a>
+    <a href="forum.html">Forum</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+</header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </div>
+
+
+<button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+
+</html>

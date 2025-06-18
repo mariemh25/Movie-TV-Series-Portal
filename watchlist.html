@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="watchlist.js" defer></script>
+  <script src="theme-toggle.js" defer></script>
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="logo">MovieHub</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="watchlist.html" class="active">Watchlist</a>
+      <a href="compare.html">Compare</a>
+      <a href="forum.html">Forum</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </header>
+
+  <!-- Watchlist Section -->
+  <div class="container">
+    <h2>Your Watchlist</h2>
+    <div id="watchlist-container">
+      <!-- Watchlist items will be displayed dynamically here -->
+    </div>
+
+    <p id="no-watchlist-msg">You have no movies in your watchlist. Start adding some!</p>
+  </div>
+<button id="back-to-top" class="back-to-top">&uarr;</button>
+</body>
+</html>

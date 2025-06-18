@@ -1,0 +1,62 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <script src="theme-toggle.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo">MovieHub</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="compare.html">Compare</a>
+    <a href="forum.html">Forum</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+</header>
+
+ <main class="profile-container">
+  <h2>Welcome, Movie Fan!</h2>
+  <p>This is your dashboard. You can:</p>
+  <ul>
+    <li>View your saved watchlist</li>
+    <li>Compare movies side by side</li>
+  </ul>
+
+  <div class="profile-summary">
+    <h3>Profile Summary</h3>
+    <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>Member Since:</strong> <span id="profileSince"></span></p>
+  </div>
+</main>
+<button id="back-to-top" class="back-to-top">&uarr;</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const userData = JSON.parse(localStorage.getItem("user"));
+
+    if (userData) {
+      document.getElementById("profileUsername").textContent = userData.username;
+      document.getElementById("profileEmail").textContent = userData.email;
+      document.getElementById("profileSince").textContent = userData.since;
+    } else {
+      document.querySelector(".profile-summary").innerHTML = "<p>You are not logged in. Please <a href='login.html'>log in</a>.</p>";
+    }
+  });
+</script>
+
+</body>
+
+</html>
